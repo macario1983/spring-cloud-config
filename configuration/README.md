@@ -1,0 +1,1 @@
+# Configuracões do projeto Spring Cloud Config
