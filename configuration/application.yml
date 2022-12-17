@@ -3,11 +3,6 @@ server:
     enabled: true
     mime-types: application/json,application/xml,text/html,text/xml,text/plain,application/javascript,text/css
 
-spring:
-  cloud:
-    config:
-      fail-fast: true
-
 logging:
   level:
     ROOT: INFO

@@ -1,15 +1,24 @@
 application:
   name: spring-cloud-config-server
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
 server:
   port: 8082
 
 spring:
   cloud:
     config:
+      name: server
       server:
         git:
-          uri: https://github.com/macario1983/spring-cloud-config.git
-          search-paths: configuration
+          clone-on-start: true
           default-label: master
-
+          search-paths: configuration
+          uri: https://github.com/macario1983/spring-cloud-config.git
+  profiles:
+    active: default
