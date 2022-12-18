@@ -13,4 +13,4 @@ spring:
   config:
     import: "configserver:http://localhost:8082"
   profiles:
-    active: default
+    active: compression, default, log
